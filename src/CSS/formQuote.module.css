@@ -1,0 +1,154 @@
+.quoteContainer{
+  min-width: 500px;
+	min-height: 330px;
+	border-radius: 5px;
+	/* position: relative; */
+	-webkit-transition: 1.5s ease-in-out;
+	transition: 1.5s ease-in-out;
+	transform-style: preserve-3d;
+  margin: 0px;
+}
+
+.side {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	color: rgb(244, 245, 239);
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	border-radius: 5px;
+  right: 0px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+	/* transform: translatez(70px) scale(1); */
+}
+
+#frontFormImg{
+  position: relative;
+  top: 0;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.infoFront{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 75%;
+  border-radius: 0px 5px 5px 0px;
+  background-color: rgba(0, 32, 88, 0.8);
+  align-self: flex-end;
+  /* justify-content: end; */
+}
+
+#titleFront{
+  position: relative;
+  font-size: 20px;
+  margin-top: 80px;
+}
+
+.content #titleFront:before{
+  content: "";
+	position: absolute;
+	bottom: -10px;
+	height: 1px;
+	background-color: rgb(200, 0, 53);
+	width: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#description{
+  font-size: 16px;  
+}
+
+.iconsInfo{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+}
+.iconsFron{  
+  width: 30%;
+  height: 60px;
+}
+
+#textIcons{
+  font-size: 10px;
+}
+#imgIcons{
+  width: 80%;
+  height: 45px;
+}
+.frontInfo{
+  margin-top: 20px;
+}
+
+.front {
+	z-index: 2; 
+}
+
+.back {
+	background-color: rgba(0, 32, 88, 0.5);
+	transform: rotateY(180deg);
+	z-index: 0;
+}
+
+.frontBack {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+/* .noVisible{
+  display: none;
+} */
+
+/* .noVisible{
+  display: none;
+} */
+
+.quoteContainer:hover{
+  cursor: pointer;
+}
+
+
+.contenForm{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.inpData{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+}
+h4{
+  position: relative;
+  left: 0;
+  margin: 5px auto 5px 5%;
+}
+#selectTypeTravel{
+  width: 90%;
+  height: 40%;
+  background-color: rgba(0, 32, 88, 0.6);
+}
+
